@@ -1,0 +1,35 @@
+@import 'variables';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    &__logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    &__menu{
+        display: flex;
+        gap: 1.5rem;
+
+        a{
+            text-decoration: none;
+            color: $font-color;
+            font-weight: 500;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__icons{
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+}

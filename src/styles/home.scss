@@ -1,0 +1,51 @@
+@import 'variables';
+
+.home{
+    background-color: $secondary-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        .left-section{
+            max-width: 50%;
+
+            h2{
+                font-size: 2rem;
+                color: $font-color;
+
+            }
+
+            p{
+                margin: 1rem 0;
+                color: $font-color;
+            }
+
+            button{
+                background: $primary-color;
+                color: white;
+                padding: 0.5rem 1.5rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            
+                &:hover{
+                    background: $button-hover;
+                }
+            }
+        }
+
+        .right-section{
+            width: 50%;
+        }
+
+
+        
+    }
+
+}
